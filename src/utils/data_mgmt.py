@@ -8,8 +8,8 @@ def get_data(validation_datasize):
     y_valid, y_train = y_train_full[:validation_datasize], y_train_full[validation_datasize:]
 
     X_test = X_test/255.
-    print(X_train.shape, X_valid.shape, X_test.shape)
+    # print(X_train.shape, X_valid.shape, X_test.shape)
     return (X_train, y_train), (X_valid,y_valid), (X_test,y_test)
 
-if __name__ == '__main__':
-    get_data(2000)
+# if __name__ == '__main__':
+#     get_data(2000)
